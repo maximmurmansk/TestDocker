@@ -3,7 +3,7 @@ on: [push]
 env:
   REGISTRY:   ghcr.io
   IMAGE_NAME: ghcr.io/${{ github.repository }}
-  IMAGE_TAG:  ${{ github.event.release.tag_name }}
+  IMAGE_TAG:  ${{ github.run_number }}
 
 
 jobs:
